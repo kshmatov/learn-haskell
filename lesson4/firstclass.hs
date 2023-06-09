@@ -5,6 +5,9 @@ ifEven f x =
         then f x
         else x
 
+
+cubeEven x = ifEven (\x -> x^3) x
+
 incOrDouble x =
     if even x
         then (\x -> x + 1)
@@ -33,3 +36,5 @@ comparesByLast name1 name2 =
         fName2 = fst name2
         lastName2 = snd name2
         c1 = compare lastName1 lastName2
+
+
