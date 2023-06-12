@@ -47,3 +47,5 @@ harmonic 1 = 1
 harmonic n = foldl (\x y -> x + 1 / y) 0 [2..n]
 -- >>> harmonic 2
 -- 0.5
+
+-- >>> harmonic 4
